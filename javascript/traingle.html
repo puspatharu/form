@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>example of triangle</title>
+</head>
+<body>
+  <script>
+    // rectangle
+    let abc1="";
+    for(let i=0;i<5;i++){
+for(let j=0;j<5;j++){
+abc1+="*";
+}
+abc1+="\n";
+    }
+    console.log(abc1);
+
+    // rectangle hole
+let abc2="";
+for(let i=0;i<5;i++){
+  for(let j=0;j<5;j++){
+    if(i==0||j==0||j==4||i==4){
+      abc2+="*";
+    }else{
+      abc2+=" ";
+    }
+  }
+  abc2+="\n"
+}
+console.log(abc2);
+
+// right triangle
+let abc3="";
+for(let i=0;i<5;i++){
+  for(let j=0;j<=i;j++){
+
+    abc3+="*";
+  }
+  abc3+="\n";
+}
+console.log(abc3);
+
+// right triangle hole
+let abc4="";
+for(let i=0;i<5;i++){
+  for(let j=0;j<=i;j++){
+    if(j==0||i==4||j==i){
+      abc4+="*"
+    }else{
+      abc4+=" "
+    }
+  }
+  abc4+="\n";
+}
+console.log(abc4);
+
+// reverse triangle
+let abc5="";
+for(let i=0;i<5;i++){
+  for(let j=0;j<5-i;j++){
+    abc5+="*";
+  }
+  abc5+="\n"
+}
+console.log(abc5);
+
+// reverse right triangle hole
+let abc6="";
+for(let i=0;i<5;i++){
+  for(let j=0;j<5-i;j++){
+    if(i==0||j==0||j==(5-i)-1){
+      abc6+="*";
+    }else{
+      abc6+=" ";
+    }
+  }
+  abc6+="\n"
+}
+console.log(abc6);
+
+// left right triangle
+let abc7="";
+    for(let i=0;i<5;i++){
+      for(let k=0;k<5-i;k++){
+abc7+=" ";
+      }  
+for(let j=0;j<=i;j++){
+abc7+="*";
+}
+abc7+="\n";
+    }
+    console.log(abc7);
+
+// left right triangle hole
+    let abc8="";
+    for(let i=0;i<5;i++){
+      for(let k=0;k<5-i;k++){
+abc8+=" ";
+      }  
+for(let j=0;j<=i;j++){
+  if(j==0||j==i||i==4){
+
+    abc8+="*";
+  }else{
+    abc8+=" ";
+  }
+}
+abc8+="\n";
+    }
+    console.log(abc8);
+
+    // reverse left right triangle
+    let abc9="";
+    for(let i=0;i<5;i++){
+for(let k=0;k<i;k++ ){
+abc9+=" ";
+}
+      for(let j=0;j<5-i;j++){
+        abc9+="*";
+    }
+abc9+="\n"
+}
+console.log(abc9);
+
+// reverse left right angle triangle hole
+let abc10="";
+    for(let i=0;i<5;i++){
+for(let k=0;k<i;k++ ){
+abc10+=" ";
+}
+      for(let j=0;j<5-i;j++){
+        if(i==0||j==5-i-1||j==0){
+
+          abc10+="*";
+        }else{
+          abc10+=" ";
+        }
+    }
+abc10+="\n"
+}
+console.log(abc10);
+
+// triangle
+let abc11=" ";
+for(let i=0;i<=5;i++){
+  for(let k=0;k<=5-i;k++){
+    abc11+=" ";
+  }
+  for(let j=0;j<(2*i)-1;j++){
+
+    abc11+="*";
+  }
+  abc11+="\n"
+}
+console.log(abc11);
+
+// triangle hole
+let abc12=" ";
+for(let i=0;i<=5;i++){
+  for(let k=0;k<=5-i;k++){
+    abc12+=" ";
+  }
+  for(let j=0;j<(2*i)-1;j++){
+if(j==0||j==(2*i)-1-1||i==5){
+  abc12+="*";
+}else{
+  abc12+=" ";
+}
+  }
+  abc12+="\n"
+}
+console.log(abc12);
+
+// reverse shape triangle
+let abc13="";
+for(let i=0;i<=5;i++){
+for(let k=0;k<=i;k++)
+abc13+=" ";
+for(let j=0;j<2*(5-i)-1;j++){
+  abc13+="*";
+}
+abc13+="\n";
+}
+console.log(abc13);
+
+// reverse triangle hole
+let abc14="";
+for(let i=0;i<=5;i++){
+for(let k=0;k<=i;k++)
+abc14+=" ";
+for(let j=0;j<2*(5-i)-1;j++){
+  if(i==0||j==0||j==2*(5-i)-1-1){
+    abc14+="*";
+  }else{
+    abc14+=" ";
+  }
+}
+abc14+="\n";
+}
+console.log(abc14);
+let abc="";
+
+// kite triangle
+let abc15=" ";
+for(let i=0;i<=5;i++){
+  for(let k=0;k<=5-i;k++){
+    abc15+=" ";
+  }
+  for(let j=0;j<(2*i)-1;j++){
+
+    abc15+="*";
+  }
+  abc15+="\n"
+}
+for(let i=0;i<=4;i++){
+for(let k=0;k<=i+1;k++)
+abc15+=" ";
+for(let j=0;j<2*(4-i)-1;j++){
+  abc15+="*";
+}
+abc15+="\n";
+}
+console.log(abc15);
+
+// kite triangle hole
+ let abc16="";
+ for (let i = 0; i<=5; i++) {
+  for(let k=0;k<=5-i;k++){
+abc16+=" ";
+  }
+   for(let j=0;j<(2*i)-1;j++){
+    if(j==(2*i)-1-1||j==0){
+      abc16+="*";
+    }else{
+      abc16+=" "
+    }
+
+   }
+   abc16+="\n"
+ }
+ for (let i = 0; i<4; i++) {
+    for(let k=0;k<=i+1;k++){
+abc16+=" ";
+  }
+   for(let j=0;j<2*(4-i)-1;j++){
+    if(j==2*(4-i)-1-1||j==0){
+     abc16+="*";
+   }else{
+    abc16+=" ";
+   }
+  } 
+  abc16+="\n";
+}
+ console.log(abc16);
+
+//  paramid
+ let abc17="";
+for(let i=0;i<5;i++){
+for(let k=0;k<=i;k++)
+abc17+=" ";
+for(let j=0;j<2*(5-i)-1;j++){
+  abc17+="*";
+}
+abc17+="\n";
+}
+for(let i=2;i<=5;i++){
+  for(let k=0;k<=5-i;k++){
+    abc17+=" ";
+  }
+  for(let j=0;j<(2*i)-1;j++){
+
+    abc17+="*";
+  }
+  abc17+="\n"
+}
+console.log(abc17);
+
+// paramid hole
+let abc18="";
+for(let i=0;i<5;i++){
+for(let k=0;k<i;k++)
+abc18+=" ";
+for(let j=0;j<2*(5-i)-1;j++){
+  if(i==0||j==2*(5-i)-1-1||j==0){
+    abc18+="*";
+  }else{
+abc+=" ";
+  }
+}
+abc18+="\n";
+}
+for(let i=2;i<=5;i++){
+  for(let k=0;k<=5-i;k++){
+    abc18+=" ";
+  }
+  for(let j=0;j<(2*i)-1;j++){
+if(j==0||i==5||j==(2*i)-1-1){
+
+  abc18+="*";
+}else{
+  abc18+=" ";
+}
+  }
+  abc18+="\n"
+}
+console.log(abc18);
+  </script>
+  
+</body>
+</html>
