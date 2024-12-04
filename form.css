@@ -1,12 +1,20 @@
 
-.container{
+body{
+
   display: flex;
-  flex-direction: row;
+  
   justify-content: center;
   
   width: 100vw;
   height: 100vh;
   align-items: center;
+}
+.container{
+display: flex;
+
+gap: 30px;
+background-color: rgb(179, 179, 178);
+padding: 50px 22px;
       }
      
   .undraw img{
@@ -17,29 +25,29 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 18px;
     
-    background-color: rgb(202, 201, 201);
+    
   }
   .link{
     display:flex ;
     flex-direction: row;
     /* object-fit: cover; */
     gap: 30px;
+    align-items: center;
   }
   .link a{
     font-size: 19px;
   }
   .icons svg{
-margin:5px;
+margin:6px;
   }
   
   #right{
     display: flex;
     flex-direction: column;
-    gap: 23.5px;
-    padding: 23px;
-    background-color: rgb(202, 201, 201);
+    gap: 23px;
+    
+   
   }
   #right input{
     font-size: 17px;
